@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://opticalarts.studio/features/ -->
+<html class="desktop-device objectfit object-fit canvas flexbox no-touchevents js-focus-visible" lang="en-US" data-js-focus-visible="">
+<!--<![endif]-->
+
+<head>
+
+    <style type="text/css">
+        @font-face {
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Circular-Loom';
+            src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-weight: 500;
+            font-style: normal;
+            font-family: 'Circular-Loom';
+            src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Circular-Loom';
+            src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-weight: 900;
+            font-style: normal;
+            font-family: 'Circular-Loom';
+            src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+        }
+    </style>
+</head>
+<link id="lite-css-list" rel="stylesheet" type="text/css" href="chrome-extension://kihnnjkmbhhockopicpjhalcbchpmkkh/data/content_script/inject_h.css">
+<style id="custom-css-list" type="text/css"></style>
+
+<body class="home splash-visible vsc-initialized">
+
+    <header id="site-header" class="">
+        <nav id="site-nav">
+            <div class="menu-menu-container">
+                <ul id="menu-menu" class="menu">
+                    <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://opticalarts.studio/features/">Featured</a></li>
+                    <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="https://opticalarts.studio/projects/">Projects</a></li>
+                    <li id="menu-item-2119" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2119"><a href="https://opticalarts.studio/category/alphabet/">Alphabet</a></li>
+                    <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a href="https://opticalarts.studio/journal/">Journal</a></li>
+                    <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18"><a href="https://opticalarts.studio/about/">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="site-logo">
+            <a class="no-barba plus-link" href="https://opticalarts.studio/" aria-label="Back to the Home Page">
+                <svg viewBox="0 0 800 133">
+					<path d="M327.331,42.5c-11.661,0-19.524,8.405-19.524,20.608s7.863,20.613,19.524,20.613c11.436,0,19.513-6.519,19.637-18.536
+						v-0.446l14.918-1.631c0,12.327-5.786,22.753-14.89,28.871v0.017c-5.52,3.703-12.254,5.825-19.665,5.825
+						c-19.93,0-34.708-14.777-34.708-34.713c0-19.93,14.777-34.713,34.708-34.713c10.578,0,18.576,3.934,24.813,10.307l-10.978,9.9
+						C337.773,44.938,333.297,42.5,327.331,42.5 M753.219,74.634c0,12.881,9.217,23.187,23.187,23.187
+						C790.1,97.821,800,88.604,800,75.04c0-11.526-6.237-16.815-13.157-19.389c-7.321-2.709-14.913-2.574-14.913-8.54
+						c0-2.715,1.897-5.424,5.424-5.424c2.709,0,4.882,1.761,5.966,4.47l9.217-9.082c-3.793-5.56-9.082-8.681-16.132-8.681
+						c-10.307,0-18.711,7.868-18.711,18.717c0,10.978,7.321,16.267,14.1,18.169c6.643,1.897,13.287,2.438,13.287,10.03
+						c0,5.424-3.522,8.41-8.675,8.41c-4.476,0-8.952-3.392-8.952-9.088H753.219z M707.251,29.213h-13.693v14.1h13.693v53.695h14.918
+						V43.313h20.337v-14.1h-20.337V0.466l-14.918,1.626V29.213z M647.189,97.008h14.913V59.586c0-10.036,6.643-16.815,16.137-16.815
+						h1.355V28.395c-9.494,0-14.235,3.528-17.492,7.868v-7.05h-14.913V97.008z M588.746,22.428l16.132,44.613h-32.269L588.746,22.428z
+						 M631.458,97.008l-35.12-94.917h-15.189l-35.114,94.917h15.861l5.695-15.596h42.305l5.695,15.596H631.458z M470.236,97.008h14.918
+						V0.466l-14.918,1.626V97.008z M430.646,63.108c0,11.12-8.41,20.342-19.389,20.342c-11.255,0-19.936-9.223-19.936-20.342
+						s8.681-20.337,19.936-20.337C422.236,42.771,430.646,51.988,430.646,63.108 M430.105,29.213v7.05
+						c-2.85-3.663-10.442-7.868-19.394-7.868c-19.389,0-34.03,14.376-34.03,34.713c0,20.342,14.642,34.713,34.03,34.713
+						c9.087,0,16.544-4.205,19.394-7.863v7.05h15.183V29.213H430.105z M256.815,11.45c0,5.695,4.476,10.166,10.036,10.166
+						s10.03-4.47,10.03-10.166c0-5.695-4.47-10.171-10.03-10.171S256.815,5.755,256.815,11.45 M259.389,97.008h14.913V29.213h-14.913
+						V97.008z M206.236,29.213h-13.693v14.1h13.693v53.695h14.918V43.313h20.337v-14.1h-20.337V0.466l-14.918,1.626V29.213z
+						 M126.508,63.108c0-11.661,7.733-20.337,19.53-20.337s19.66,8.675,19.66,20.337s-7.863,20.342-19.66,20.342
+						S126.508,74.769,126.508,63.108 M111.867,29.213v103.321l14.913-1.626v-40.95c4.205,4.606,11.526,7.863,19.936,7.863
+						c20.201,0,33.624-13.558,33.624-34.713c0-21.15-13.422-34.713-33.624-34.713c-8.952,0-15.596,3.663-19.936,7.868v-7.05H111.867z
+						 M78.373,49.55c0,18.982-13.016,33.9-31.456,33.9S15.46,68.532,15.46,49.55s13.016-33.9,31.456-33.9S78.373,30.568,78.373,49.55
+						 M93.833,49.55c0-26.709-20.066-48.271-46.916-48.271C20.072,1.279,0,22.84,0,49.55s20.072,48.271,46.916,48.271
+						C73.767,97.821,93.833,76.259,93.833,49.55"></path>
+				</svg>
+            </a>
+        </div>
+    </header>
+
+    <header id="site-sidebar" class="is-hidden compensate-for-scrollbar">
+        <div class="site-sidebar__close">
+            <p class="h5"><a class="plus-link" href="https://opticalarts.studio/features/">Close</a></p>
+        </div>
+        <div class="site-sidebar__title">
+            <h1 class="h5">Home</h1>
+        </div>
+    </header>
+
+    <main id="site-main" class="show-grid" style="">
+        <div id="barba-wrapper" aria-live="polite">
+            <div class="barba-container" data-namespace="features">
+
+
+
+
+
+
+
+
+
+
+
+
+                <section class="list_titles-section">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="list-block">
+
+
+
+                                <li>
+                                    <a class="list-link" href="https://opticalarts.studio/phototrophs/" data-slug="phototrophs" data-text="black" data-color="#dbdbdb">
+                                        <h1>Wir<span>01</span></h1>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a class="list-link" href="https://opticalarts.studio/i-information/" data-slug="i-information" data-text="white" data-color="#000000">
+                                        <h1>sind<span>02</span></h1>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a class="list-link" href="https://opticalarts.studio/fork/" data-slug="fork" data-text="white" data-color="#181f2b">
+                                        <h1>Bureau<span>03</span></h1>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a class="list-link" href="https://opticalarts.studio/m-morris/" data-slug="m-morris" data-text="black" data-color="#c6d1c6">
+                                        <h1>Creatif<span>04</span></h1>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li>
+                                    <a class="list-link" href="https://opticalarts.studio/toccata/" data-slug="toccata" data-text="white" data-color="#280000">
+                                        <h1><span>05</span></h1>
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a class="list-link" href="mailto:max@eckhardt.me?subject=new%20project&body=hey%20there%0D%0A%0D%0Alets%20start%20a%20project" data-slug="toccata" data-text="white" data-color="#280000">
+                                        <h1>Lets Talk<span>05</span></h1>
+                                    </a>
+                                </li>
+
+
+
+
+
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="list_videos-section">
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-3of12--lg                                           block--margin-medium--lg" data-slug="phototrophs">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 125%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="1uavkpvow"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="1uavkpvow">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/11/PhototrophsE_insta.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/11/PhototrophsE_insta.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-2of12--lg                                           block--margin-medium--lg" data-slug="i-information">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 125%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="q8xe79ooy"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="q8xe79ooy">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/08/OA_LetterI_Portrait_REC709_1_1.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/08/OA_LetterI_Portrait_REC709_1_1.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                                           block--margin-small--lg" data-slug="fork">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="wn4d6kzdk"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="wn4d6kzdk">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/07/Mugs-1.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/07/Mugs-1.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-7of12--lg                                           block--margin-large--lg" data-slug="fork">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="j5pscjuij"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="j5pscjuij">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/07/Dreami.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/07/Dreami.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-8of12--lg                                           block--margin-medium--lg" data-slug="m-morris">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="4eq23zizk"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="4eq23zizk">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/06/Morris_Vines_1.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/06/Morris_Vines_1.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-1of12--lg                                           block--margin-small--lg" data-slug="m-morris">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="bj05s1jrl"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="bj05s1jrl">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/06/Flower_04.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/06/Flower_04.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-8of12--lg                                           block--margin-medium--lg" data-slug="toccata">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="q0j256svr"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="q0j256svr">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/06/Toccata_plates.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/06/Toccata_plates.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-2of12--lg                                           block--margin-large--lg" data-slug="toccata">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="flx22t8q6"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="flx22t8q6">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/06/Toccata_wine.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/06/Toccata_wine.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-8of12--lg                                           block--margin-small--lg" data-slug="u-utopia">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="cttf5tla8"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="cttf5tla8">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_Utopia_UHD_REC709_1.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_Utopia_UHD_REC709_1.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-2of12--lg                                           block--margin-medium--lg" data-slug="u-utopia">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 149.01960784314%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="t22a21oty"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="t22a21oty">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/02/Utopia_Web_END_V1_2.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/02/Utopia_Web_END_V1_2.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-6of12--lg                                           block--margin-large--lg" data-slug="order-in-space-2">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.25%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="mbttl5ly3"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="mbttl5ly3">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/03/OA_OrderInSpace_Study03_UHD_REC709.mov" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/03/OA_OrderInSpace_Study03_UHD_REC709.mov">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                                           block--margin-small--lg" data-slug="order-in-space-2">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 125%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="30l4z8oze"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="30l4z8oze">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_Salts_Triangle01_Instagram_Portrait.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_Salts_Triangle01_Instagram_Portrait.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--image      block--hover              block--size-auto              col-4of12--lg                     push-of12                 push-1of12--lg                                           block--margin-medium--lg" data-slug="colour-study-liquids">
+
+
+
+
+
+
+                                    <div class="image-wrapper" style="padding-bottom: 133.28488372093%;">
+                                        <img width="688" height="917" data-src="https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1.jpg" data-srcset="https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-225x300.jpg 225w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-648x864.jpg 648w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-324x432.jpg 324w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-162x216.jpg 162w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-420x560.jpg 420w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-210x280.jpg 210w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1.jpg 688w"
+                                            sizes="(min-width: 1560px) 648px, (min-width: 1280px) 420px, (min-width: 900px) 324px,(min-width: 688px) 840px, (min-width: 470px) 648px, (min-width: 321px) 420px, 324px" class="lazy loaded" alt="PIGMENTS_0701_GREEN_BLU"
+                                            srcset="https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-225x300.jpg 225w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-648x864.jpg 648w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-324x432.jpg 324w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-162x216.jpg 162w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-420x560.jpg 420w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1-210x280.jpg 210w, https://opticalarts.studio/wp-content/uploads/2020/02/PIGMENTS_0701_GREEN_BLU-1.jpg 688w"
+                                            src="./Optical Arts _ Features_files/PIGMENTS_0701_GREEN_BLU-1.jpg" data-was-processed="true">
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--image      block--hover              block--size-auto              col-3of12--lg                     push-of12                 push-7of12--lg                                           block--margin-large--lg" data-slug="colour-study-liquids">
+
+
+
+
+
+
+                                    <div class="image-wrapper" style="padding-bottom: 133.33333333333%;">
+                                        <img width="420" height="560" data-src="https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2.jpg" data-srcset="https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-225x300.jpg 225w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-324x432.jpg 324w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-162x216.jpg 162w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-210x280.jpg 210w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2.jpg 420w"
+                                            sizes="(min-width: 1662px) 420px, (min-width: 1210px) 324px, (min-width: 1020px) 210px, (min-width: 900px) 162px,(min-width: 688px) 840px, (min-width: 470px) 648px, (min-width: 321px) 420px, 324px" class="lazy loaded"
+                                            alt="TOCCATA_PIGMENTS_0627_MAG" srcset="https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-225x300.jpg 225w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-324x432.jpg 324w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-162x216.jpg 162w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2-210x280.jpg 210w, https://opticalarts.studio/wp-content/uploads/2020/02/TOCCATA_PIGMENTS_0627_MAG-2.jpg 420w"
+                                            src="./Optical Arts _ Features_files/TOCCATA_PIGMENTS_0627_MAG-2.jpg" data-was-processed="true">
+                                    </div>
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="list_videos-section__inside">
+                        <div class="container">
+                            <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="block     block--short-clip      block--hover              block--size-auto              col-5of12--lg                     push-of12                 push-7of12--lg                                           block--margin-large--lg" data-slug="x-extrusions">
+
+
+
+
+                                    <div class="image-wrapper lazyVideo pre-loaded" style="padding-bottom: 56.209150326797%;">
+                                        <div class="vsc-controller vsc-nosource" data-vscid="jstwrr4c3"></div>
+                                        <video loop="" muted="" playsinline="" preload="none" allow="autoplay" data-vscid="jstwrr4c3">
+								<source data-src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_LetterX_35sec_v005_UHD_20191115_1800_Landscape_V1-0001.mp4" type="video/mp4" src="https://opticalarts.studio/wp-content/uploads/2020/02/OA_LetterX_35sec_v005_UHD_20191115_1800_Landscape_V1-0001.mp4">
+							</video>
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </section>
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <div id="site-cursor" class="" style="left: 616px; top: 450px;"></div>
+    <div id="site-icon" class="" style="left: 616px; top: 450px;"></div>
+
+    <script type="text/javascript" src="./Optical Arts _ Features_files/plugins.min.js.Download" id="plugins-js"></script>
+    <script type="text/javascript" src="./Optical Arts _ Features_files/app.min.js.Download" id="app-js"></script>
+    <script type="text/javascript" src="./Optical Arts _ Features_files/polyfill.min.js.Download" id="polyfill-js"></script>
+    <script type="text/javascript" src="./Optical Arts _ Features_files/wp-embed.min.js.Download" id="wp-embed-js"></script>
+
+</body>
+<loom-container id="lo-engage-ext-container">
+    <div></div>
+    <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+
+</html>
