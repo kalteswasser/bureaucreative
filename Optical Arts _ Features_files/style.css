@@ -359,7 +359,6 @@ textarea {
     border: 0;
     border-radius: 3px;
     color: inherit;
-    cursor: pointer;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -2896,10 +2895,6 @@ strong {
 :active,
 :focus,
 :hover,
-html * {
-    cursor: none!important
-}
-
 *,
 ::after,
 ::before {
@@ -4007,7 +4002,6 @@ svg {
     margin-right: 50px
 }
 
-#site-cursor,
 #site-icon {
     position: fixed;
     width: 48px;
@@ -4030,30 +4024,6 @@ svg {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden
-}
-
-.touch-device #site-cursor,
-.touch-device #site-icon {
-    display: none
-}
-
-#site-cursor.is-hovering,
-#site-icon.is-hovering {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1)
-}
-
-#site-cursor.is-out,
-#site-icon.is-out {
-    opacity: 0
-}
-
-#site-cursor {
-    background-color: #fff;
-    z-index: 99999999999;
-    mix-blend-mode: difference
 }
 
 #site-icon.arrow-left::after,
